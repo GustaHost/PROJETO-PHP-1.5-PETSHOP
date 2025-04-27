@@ -8,12 +8,10 @@ if (isset($_POST['excluir'])) {
     // Se o pet existir na lista, exclui ele da sessão
     if (isset($_SESSION['pets'][$index])) {
         unset($_SESSION['pets'][$index]);
-        $_SESSION['pets'] = array_values($_SESSION['pets']);
     }
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
